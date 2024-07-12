@@ -1,0 +1,7 @@
+# TIL
+TODAY RANGUN LEARNED
+
+## SSAFY 12기 학습 과정
+
+### GIT 
+- 
