@@ -55,11 +55,9 @@ def bfs (row, col, level, px, py) :     # 현위치, level
         num, dy, dx = way(type)
         find = 0
 
-        for k in range(num + 1):
-            if -px == dx[k] and -py == dy[k] :
-                find += 1
 
-        if find >0  :
+
+        if find > 0  :
 
             for k in range(1, num + 1) :
                 nr = r + dx[k]
@@ -67,9 +65,12 @@ def bfs (row, col, level, px, py) :     # 현위치, level
                 if nr < 0 or nr >= N or nc < 0 or nc >= M :
                     continue
 
-                if tunnel[nr][nc] == 0 :
+                if visited[nr][nc] or tunnel[nr][nc] == 0 :
                     continue
 
+                for i in range(num + 1):
+                    if -px == dx[k] and -py == dy[k]:
+                        find += 1
                 if not visited[nr][nc] :
                     queue.append((nr, nc, cnt + 1, tunnel[nr][nc], dx[k], dy[k]))
                     visited[nr][nc] = True
