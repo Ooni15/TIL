@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>lottos</h1>
+  <p>이번 회차 번호 : {{real_lottos}}</p>
+  <p>구매한 번호 : {{lottos}}</p>
+  
+  <p>맞춘 번호 : {{correct_lottos}}</p>
+
+  {% if lottos == real_lottos %}
+    <p>명동 ㄱㄱ</p>
+    {% else %}
+    <p>역삼 컴</p>
+  {% endif %}
+  
+</body>
+</html>
