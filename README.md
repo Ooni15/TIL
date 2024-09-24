@@ -12,3 +12,4 @@ TODAY RANGUN LEARNED
 2. [Django02_Template System](WEB/[240919]Django02/[240919]Template_System.md)
 3. [Django03_Model](WEB/[240920]Django03/[240920]Model.md)
 4. [Django04_ORM](WEB/[240923]Django04/[240923]ORM.md)
+5. [Django05_ORM with view](WEB/[240924]Django05/[240924]ORM_with_view.md)
