@@ -13,3 +13,5 @@ TODAY RANGUN LEARNED
 3. [Django03_Model](WEB/[240920]Django03/[240920]Model.md)
 4. [Django04_ORM](WEB/[240923]Django04/[240923]ORM.md)
 5. [Django05_ORM with view](WEB/[240924]Django05/[240924]ORM_with_view.md)
+6. [Django06_From](WEB/[240925]Django06/[240925]Form.md)
+7. [Django07_Static files](WEB/[240926]Django07/[240926]Static_files.md)
