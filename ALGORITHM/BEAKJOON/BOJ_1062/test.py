@@ -1,1 +1,0 @@
-a = ['antarctica', 'antahellotica', 'antacartica']
