@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //JS의 객체 지향
+  const cat = {
+    name: '고양이',
+    age : 5, 
+    attack: function (){
+        console.log(`${this.name} 냥냥펀치!`)
+    }
+  }
+  console.log(this)     // window
+
+  console.log(cat.name)
+  console.log(typeof cat)
+  console.log(cat)
+  cat.attack()
+
+  const myCat = {
+    name : '키티',
+    age : '2살'
+  }
+  myCat.__proto__ = cat     // 상속 흉내내기
+  myCat.attack()    // 키티 냥냥펀치!
+  console.log(myCat)
+
+  function Cat(name, age){
+    this.name = name
+    this.age = age
+  }
+  
+  Cat.prototype.attack = function() {
+    console.log(`${this.name}! 냥냥 펀치`)
+  }
+
+  const cat01 = new Cat('고앵이', 3) // 와 뉴다
+  cat01.attack()
+
+  class NewCat {
+    constructor(name, age){
+        this.name = name
+        this.age = age
+    }
+  }
+
+  NewCat.prototype.attack = function() {
+    console.log(`${this.name}! 냥냥 펀치`)
+  }
+
+  const cat02 = new NewCat('고앵이앵이', 3)
+  cat02.attack()
+    // - JS 객체 지향 입니다.
+    // JS는 객체 지향 위해 Prototype이라는 내부적인 개념을 통해 구성하고 있다.
+    // ES6에서 class 키워드가 추가 되었다.
+    // this는 현재 생성된 인스턴스가 가지고 있는 함수가 호출 될 때, 
+    // 가리키고 있는 this의 객체가 결정 된다.
+
+
+</script>
+</body>
+</html>
+
