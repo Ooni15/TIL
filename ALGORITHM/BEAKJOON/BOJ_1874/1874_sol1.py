@@ -11,7 +11,6 @@ now = 0
 i = 0
 while True:
 
-
     if i >= n:
         for j in range(len(result)):
             print(result[j])
