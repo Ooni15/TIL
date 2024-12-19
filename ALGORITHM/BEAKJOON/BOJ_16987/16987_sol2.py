@@ -43,7 +43,7 @@ def egg(now_egg, broken_egg, s, w):     # 현재 계란 친구. 깨진 계란 �
         s[now_egg] = original_now
         s[i] = original_next
 
-        # 시벌탱 이거다
+    # 시벌탱 이거다
     if not can_hit:
         egg(now_egg + 1, broken_egg, s, w)
 
