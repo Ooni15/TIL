@@ -38,7 +38,6 @@ def new_ball(location):
                     continue
 
                 s = check_s[y][x] // len(location[i][j])
-
                 if odd_cnt == 0 or even_cnt == 0:
                     for t in range(4):
                         new_fireball.append([y, x, m, s, 2*t])
